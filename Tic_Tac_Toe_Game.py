@@ -3,7 +3,7 @@ from tkinter import messagebox
 import logging
 
 # File handler and stream handler setup
-logger = logging.getLogger("Text_Editor_Logger")
+logger = logging.getLogger("Tic_Tac_Toe_Logger")
 logger.setLevel(logging.DEBUG)
 
 if logger.hasHandlers():
@@ -15,7 +15,7 @@ stream_handler = logging.StreamHandler()
 stream_handler.setLevel(logging.DEBUG)  
 stream_handler.setFormatter(formatter)
 
-file_handler = logging.FileHandler("Text_Editor.log")
+file_handler = logging.FileHandler("Tic_Tac_Toe.log")
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(formatter)
 
